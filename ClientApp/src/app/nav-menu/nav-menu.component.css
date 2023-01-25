@@ -4,29 +4,73 @@
   height: 76px;
 }
 
+.btnHamb{
+  background: none;
+  border: none;
+  margin-left: 1rem;
+}
+
+.iconHamb {
+  color: #fff;
+  transform: scale(1.2);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-brand {
+  margin: 0 3rem 0 -7rem;
+  display: flex;
+  align-items: center;
+}
+
 .logoAdm, .logoLugar {
   padding: 0 .2rem;
 }
 
 .logoAdm {
+  font-family: 'Lily Script One', cursive;
   color: #FFB300;
-
+  font-size: 2rem;
 }
 
 .logoLugar {
   color: #fff;
   font-weight: 700;
+  font-size: 1.8rem;
 }
 
 .imgLogo{
-    width: 3rem;
-    fill: #fff; 
+    width: 1.3rem;
+    fill: #fff;
+    margin: 0 1rem;
 }
 
-a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
+.divInput {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+#navInput {
+  width: 40rem;
+  background: none;
+  padding: 12px 0px 12px 6px;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+#navInput::placeholder {
+  color: #fff;
+  opacity: 0.6;
 }
 
 html {

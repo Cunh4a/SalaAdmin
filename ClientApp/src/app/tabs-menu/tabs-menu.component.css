@@ -1,0 +1,35 @@
+.container {
+  position: fixed;
+  top: 75px;
+  height: 100vh;
+  width: 5vw;
+  background-color: #fff;
+  border-right: 1px solid rgba(163, 163, 163, 0.4);
+  display: flex;
+  align-items: start;
+  padding-top: 2rem;
+}
+
+.navbar-nav {
+  width: 100%;
+}
+
+.nav-item {
+  margin: .7rem auto;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.nav-item:hover {
+  background: #E3EEFA;
+}
+
+#logoTabs {
+  width: 1.5rem;
+  height: 1.5rem;
+  transition: .2s;
+}

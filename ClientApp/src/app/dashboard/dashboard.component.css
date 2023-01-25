@@ -1,0 +1,45 @@
+.divInicio {
+  background: #1B499B;
+  color: #fff;
+  height: 10rem;
+  text-align: center;
+}
+
+.titleDefault {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 39.01px;
+  padding-top: 37px;
+}
+
+.cards{
+    height: 20vh;
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    margin-top: -1.5rem;
+    justify-content: space-around;
+}
+
+.cardItem {
+  width: 18%;
+  border-radius: .5rem;
+  background: #fff;
+  text-align: center;
+  box-shadow: 0px 0px 4px 0px #00000040;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cardTitle {
+  color: #FFB300;
+  font-size: 2.5rem;
+  line-height: 51.2px;
+  width: 100%;
+  padding-top: 1rem;
+}
+
+.cardSpan {
+  color: #1B499B;
+}
