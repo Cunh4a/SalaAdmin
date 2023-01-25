@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="navbar-collapse collapse d-sm-inline-flex justify-content-end"
+       [ngClass]="{ show: isExpanded }">
+    <ul class="navbar-nav flex-grow">
+      <li class="nav-item"
+          [routerLinkActive]="['link-active']"
+          [routerLinkActiveOptions]="{ exact: true }">
+        <a class="nav-link text-dark" [routerLink]="['/']">
+          <img id="logoTabs" src="/assets/images/logo/logoDashboard.svg" />
+        </a>
+      </li>
+      <li class="nav-item" [routerLinkActive]="['link-active']">
+        <a class="nav-link text-dark" [routerLink]="['/empresas']">
+          <img id="logoTabs" src="/assets/images/logo/logoEmpresa.svg" />
+        </a>
+      </li>
+      <li class="nav-item" [routerLinkActive]="['link-active']">
+        <a class="nav-link text-dark" [routerLink]="['/administradores']">
+          <img id="logoTabs" src="/assets/images/logo/logoAdm.svg" />
+        </a>
+      </li>
+      <li class="nav-item" [routerLinkActive]="['link-active']">
+        <a class="nav-link text-dark" [routerLink]="['/implantacao']">
+          <img id="logoTabs" src="/assets/images/logo/logoImplantacao.svg" />
+        </a>
+      </li>
+      <li class="nav-item" [routerLinkActive]="['link-active']">
+        <a class="nav-link text-dark" [routerLink]="['/relatorios']">
+          <img id="logoTabs" src="/assets/images/logo/logoRelatorios.svg" />
+        </a>
+      </li>
+      <li class="nav-item" [routerLinkActive]="['link-active']">
+        <a class="nav-link text-dark" [routerLink]="['/comunicacao']">
+          <img id="logoTabs" src="/assets/images/logo/logoComunicacao.svg" />
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>

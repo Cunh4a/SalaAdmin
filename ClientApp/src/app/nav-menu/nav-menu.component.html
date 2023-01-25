@@ -2,47 +2,22 @@
   <nav
     class="headerNav navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3"
   >
+    <button class="btnHamb">
+      <mat-icon class="iconHamb">menu</mat-icon>
+    </button>
     <div class="container">
+
       <a class="navbar-brand" [routerLink]="['/']">
-        <span class="logoLugar">LUGAR</span>
+        <span class="logoLugar">LUGARH</span>
         <span class="logoAdm">Adm</span>
         <img class="imgLogo" src="/assets/images/lugar.png" />
       </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target=".navbar-collapse"
-        aria-label="Toggle navigation"
-        [attr.aria-expanded]="isExpanded"
-        (click)="toggle()"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div
-        class="navbar-collapse collapse d-sm-inline-flex justify-content-end"
-        [ngClass]="{ show: isExpanded }"
-      >
-        <ul class="navbar-nav flex-grow">
-          <li
-            class="nav-item"
-            [routerLinkActive]="['link-active']"
-            [routerLinkActiveOptions]="{ exact: true }"
-          >
-            <a class="nav-link text-dark" [routerLink]="['/']">Home</a>
-          </li>
-          <li class="nav-item" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-dark" [routerLink]="['/counter']"
-              >Counter</a
-            >
-          </li>
-          <li class="nav-item" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-dark" [routerLink]="['/fetch-data']"
-              >Fetch data</a
-            >
-          </li>
-        </ul>
+
+      <div class="divInput">
+        <mat-icon class="iconSearch">search</mat-icon>
+        <input id="navInput" placeholder="Procure por nome, função ou número do documento…" />
       </div>
+
     </div>
   </nav>
 </header>

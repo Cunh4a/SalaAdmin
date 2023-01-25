@@ -14,3 +14,17 @@ code {
   background-color: #1b6ec2;
   border-color: #1861ac;
 }
+
+html, body {
+    height: 100%;
+}
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.divContainer {
+  width: 93.5vw;
+  height: 90vh;
+  margin: -1rem 0 0 -2.7rem;
+}
