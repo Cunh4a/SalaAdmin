@@ -1,7 +1,13 @@
 .headerNav {
+  height: 12vh;
+  width: 100%;
   background-color: #004BA0;
   color: #FFF;
-  height: 76px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 1;
 }
 
 .btnHamb{
@@ -17,7 +23,7 @@
 
 .container {
   display: flex;
-  justify-content: center;
+  padding-left: 4rem;
 }
 
 .navbar-brand {
@@ -43,9 +49,9 @@
 }
 
 .imgLogo{
-    width: 1.3rem;
-    fill: #fff;
-    margin: 0 1rem;
+  width: 1.3rem;
+  fill: #fff;
+  margin: 0 1rem;
 }
 
 .divInput {
@@ -56,8 +62,8 @@
   padding: 0 1rem;
 }
 
-#navInput {
-  width: 40rem;
+#navInput{
+  width: 30rem;
   background: none;
   padding: 12px 0px 12px 6px;
   color: #fff;
@@ -68,9 +74,55 @@
   line-height: 19px;
 }
 
-#navInput::placeholder {
+#navInput::placeholder{
   color: #fff;
   opacity: 0.6;
+}
+
+.divUser {
+  display: flex;
+  margin-left: 5rem;
+  height: 3.5rem;
+  width: 15rem;
+}
+
+.infoUser{
+  float: left;
+  width: 70%;
+  text-align: end;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-top: .6rem;
+}
+
+.infoUser span{
+  font-weight: 400;
+}
+
+.infoUser p {
+  font-size: .7rem;
+  font-weight: 400;
+}
+
+.iconUser {
+  float: right;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconUser span {
+  border-radius: 50%;
+  background: #80A5CF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  opacity: 1;
+  height: 3.3rem;
+  width: 3.3rem;
 }
 
 html {
