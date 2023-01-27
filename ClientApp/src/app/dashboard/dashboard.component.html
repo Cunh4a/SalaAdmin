@@ -3,26 +3,91 @@
     <h1 class="titleDefault">Dashboard</h1>
     <span>Aqui conseguimos ter uma visualização geral de nossos dados</span>
   </div>
-  <div class="cards">
-    <div class="cardItem">
-      <span class="cardTitle">10k</span>
-      <span class="cardSpan">Empresas ativas</span>
+  <div class="infoDashboard">
+    <div class="cards">
+      <div class="cardItem" *ngFor="let valueDashboard of valuesDashboard">
+        <span class="cardTitle">{{valueDashboard.value}}</span>
+        <span class="cardSpan">{{valueDashboard.info}}</span>
+      </div>
     </div>
-    <div class="cardItem">
-      <span class="cardTitle">400</span>
-      <span class="cardSpan">Empresas inativas</span>
-    </div>
-    <div class="cardItem">
-      <span class="cardTitle">1,1M</span>
-      <span class="cardSpan">Relatórios</span>
-    </div>
-    <div class="cardItem">
-      <span class="cardTitle">20M</span>
-      <span class="cardSpan">Novos colaboradores</span>
-    </div>
-    <div class="cardItem">
-      <span class="cardTitle">2k</span>
-      <span class="cardSpan">Contratos</span>
+    <div class="vencEmpresa">
+      <div class="headerEmpresa">
+        <div class="nameIcon">
+          <img id="logoTabs" src="/assets/images/logo/logoEmpresa.svg" />
+          <h2>Empresas perto do vencimento</h2>
+        </div>
+        <a href="/empresas">Ver todas</a>
+      </div>
+
+      <div class="cardEmpresa" *ngFor="let empresaVencimento of empresasVencimento">
+        <div class="divIcon">
+          <img class="logoIcon" src="/assets/images/logo/logoEmpresa.svg" />
+        </div>
+        <div class="divInfo">
+          <p class="p1Dash">{{empresaVencimento.name}}</p>
+          <p class="p2Dash">{{empresaVencimento.cnpj}}</p>
+          <p class="p3Dash">{{empresaVencimento.date}}</p>
+        </div>
+      </div>
+
+      <div class="vencEmpresa">
+        <div class="headerEmpresa">
+          <div class="nameIcon">
+            <img id="logoTabs" src="/assets/images/icons/iconDocs.svg" />
+            <h2>Últimos contratos criados</h2>
+          </div>
+        </div>
+
+        <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+          <!-- Coluna: Nome -->
+          <ng-container matColumnDef="nome">
+            <th mat-header-cell *matHeaderCellDef> Nome </th>
+            <td mat-cell *matCellDef="let element"> {{element.nome}} </td>
+          </ng-container>
+
+          <!-- Coluna: Descrição -->
+          <ng-container matColumnDef="desc">
+            <th mat-header-cell *matHeaderCellDef> Descrição </th>
+            <td mat-cell *matCellDef="let element"> {{element.desc}} </td>
+          </ng-container>
+
+          <!-- Coluna: Empresa -->
+          <ng-container matColumnDef="emp">
+            <th mat-header-cell *matHeaderCellDef> Empresa </th>
+            <td mat-cell *matCellDef="let element"> {{element.emp}} </td>
+          </ng-container>
+
+          <!-- Coluna: Criado em -->
+          <ng-container matColumnDef="criado">
+            <th mat-header-cell *matHeaderCellDef> Criado em </th>
+            <td mat-cell *matCellDef="let element">
+              <img class="tableIcon" src="/assets/images/icons/iconDate.svg" />
+              {{element.criado}}
+              <img class="tableIcon" src="/assets/images/icons/iconTime.svg" />
+              {{element.criadoTime}}
+            </td>
+          </ng-container>
+
+          <!-- Coluna: Atulizado em -->
+          <ng-container matColumnDef="att">
+            <th mat-header-cell *matHeaderCellDef> Atualizado em </th>
+            <td mat-cell *matCellDef="let element">
+              <img class="tableIcon" src="/assets/images/icons/iconDate.svg" />
+              {{element.att}}
+              <img class="tableIcon" src="/assets/images/icons/iconTime.svg" />
+              {{element.attTime}}
+            </td>
+          </ng-container>
+
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+        </table>
+         
+        <mat-paginator class="paginator" [pageSizeOptions]="[5, 10, 15]" showFirstLastButtons></mat-paginator>
+
+      </div>
     </div>
   </div>
 </div>

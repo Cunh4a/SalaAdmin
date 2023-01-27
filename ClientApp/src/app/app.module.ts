@@ -1,13 +1,15 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon'
+import { MatNativeDateModule } from '@angular/material/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AngularMaterialModule } from './angular-material.module';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TabsMenuComponent } from './tabs-menu/tabs-menu.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { EmpresasComponent } from './empresas/empresas.component';
@@ -15,6 +17,7 @@ import { AdministradoresComponent } from './administradores/administradores.comp
 import { ImplantacaoComponent } from './implantacao/implantacao.component';
 import { RelatoriosComponent } from './relatorios/relatorios.component';
 import { ComunicacaoComponent } from './comunicacao/comunicacao.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,7 @@ import { ComunicacaoComponent } from './comunicacao/comunicacao.component';
     AdministradoresComponent,
     ImplantacaoComponent,
     RelatoriosComponent,
-    ComunicacaoComponent
+    ComunicacaoComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -41,9 +44,13 @@ import { ComunicacaoComponent } from './comunicacao/comunicacao.component';
       { path: 'comunicacao', component: ComunicacaoComponent },
     ]),
     BrowserAnimationsModule,
-    MatIconModule
+    ReactiveFormsModule,
+    MatNativeDateModule,
+    MatIconModule,
+    AngularMaterialModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }

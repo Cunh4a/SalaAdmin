@@ -1,13 +1,14 @@
 .container {
   position: fixed;
-  top: 75px;
+  z-index: 1;
+  top: 12%;
   height: 100vh;
   width: 5vw;
   background-color: #fff;
   border-right: 1px solid rgba(163, 163, 163, 0.4);
   display: flex;
-  align-items: start;
-  padding-top: 2rem;
+  align-items: flex-start;
+  padding-top: .5rem;
 }
 
 .navbar-nav {

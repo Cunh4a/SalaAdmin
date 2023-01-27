@@ -12,13 +12,15 @@
   padding-top: 37px;
 }
 
-.cards{
-    height: 20vh;
-    width: 90%;
-    display: flex;
-    margin: 0 auto;
-    margin-top: -1.5rem;
-    justify-content: space-around;
+.infoDashboard {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  margin-top: -1.5rem;
 }
 
 .cardItem {
@@ -28,8 +30,11 @@
   text-align: center;
   box-shadow: 0px 0px 4px 0px #00000040;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  padding: .5rem 0;
 }
 
 .cardTitle {
@@ -37,9 +42,136 @@
   font-size: 2.5rem;
   line-height: 51.2px;
   width: 100%;
-  padding-top: 1rem;
+  font-weight: 700;
+  padding: 1rem 0 .3rem;
 }
 
 .cardSpan {
   color: #1B499B;
+  font-weight: 600;
+  padding: .3rem 0 1rem;
+}
+
+.vencEmpresa{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.headerEmpresa{
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logoTabs {
+  margin-top: -1rem;
+}
+
+.nameIcon {
+  display: flex;
+  align-items: center;
+}
+
+.nameIcon h2{
+  font-size: 20px;
+  color: #777777;
+  padding: 0 1rem;
+}
+
+.headerEmpresa a {
+  color: #004BA0;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.cardEmpresa {
+  width: 30%;
+  margin: 1rem;
+  border-radius: 0.25rem;
+  box-shadow: 0px 0px 4px 0px #00000040;
+  display: flex;
+}
+
+.divIcon {
+  width: 4rem;
+  height: 4rem;
+  background: #D9D9D9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto 1rem;
+}
+
+.logoIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+  opacity: 0.6;
+}
+
+.divInfo {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+}
+
+.p1Dash, .p2Dash, .p3Dash{
+  width: 100%;
+  margin: 0;
+  padding: .2rem 0;
+}
+
+.p1Dash {
+  font-weight: 600;
+  color: #1B499B;
+}
+
+.p2Dash {
+  font-weight: 500;
+  color: #777777;
+}
+
+.p3Dash {
+  font-weight: 500;
+  color: #F44336;
+}
+
+table {
+  width: 100%;
+}
+
+table {
+  width: 80vw;
+  height: auto;
+  margin: 0 auto;
+  box-shadow: none;
+}
+
+td, th{
+    width: 20%;
+    height: 4rem;
+}
+
+th {
+  font-size: .9rem;
+  font-weight: 700;
+  color: #5A5A5A;
+}
+
+td {
+  font-weight: 500;
+  color: #777777;
+}
+
+.paginator{
+  position: relative;
+  margin: 1rem auto auto auto;
+}
+
+.tableIcon{
+    margin: 0 .2rem .4rem;
+    width: 1.1rem;
+    height: 1.1rem;
 }
