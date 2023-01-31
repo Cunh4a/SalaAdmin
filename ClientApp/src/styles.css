@@ -40,3 +40,149 @@ body {
   height: 10rem;
   text-align: center;
 }
+
+.divSearch {
+  width: 100%;
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.searchComplete {
+  display: flex;
+  width: 40%;
+  height: 7vh;
+  margin-left: 2.2rem;
+}
+
+.allSearch {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 8px;
+  padding: 0 0 0 0.7rem;
+  border-radius: 0.25rem;
+  border: 1px solid #0000001A;
+  width: 100%;
+  height: 3rem;
+}
+
+.inputSearchDefault {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+}
+
+.inputSearchDefault::placeholder {
+  font-size: 0.8rem;
+}
+
+.iconSearchDefault {
+  margin-right: .5rem;
+}
+
+.buttonSearchDefault {
+  background: #004BA0;
+  color: #fff;
+  border: none;
+  width: 6rem;
+  height: 3rem;
+  border-radius: 0.25rem;
+  margin-left: .5rem;
+}
+
+.otherButtons {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-right: 1.5rem;
+}
+
+.addButtonDefault {
+  background: #FFB300;
+  border: none;
+  height: 3rem;
+  padding: 0 .8rem;
+  border-radius: 8rem;
+  color: #000;
+  font-weight: 700;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+}
+
+.addButtonDefault span {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-right: .5rem;
+}
+
+#tableDefault {
+  width: 98%;
+  margin: 1rem auto;
+  box-shadow: none;
+}
+
+#tableDefault img {
+  margin: 0 .3rem .3rem;
+}
+
+#tableDefault th {
+  color: #777777;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+#tableDefault td {
+  height: 10vh;
+  font-weight: 500;
+  color: #777777;
+}
+
+#paginatorDefault {
+  display: flex;
+  justify-content: center;
+}
+
+.logoEmpresasTable {
+  width: 2rem;
+  height: 2rem;
+  background: red;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(217, 217, 217, 1);
+  margin: 0 .5rem;
+}
+
+.logoEmpresasTable img {
+  filter: opacity(0.6);
+  width: .8rem;
+}
+
+.tableAtivo, .tableInativo {
+  width: 5rem;
+  height: 1.8rem;
+  border-radius: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.tableAtivo {
+  background: rgba(151, 181, 117, 0.15);
+  color: #749D47;
+}
+
+.tableInativo {
+  background: rgba(244, 67, 54, 0.15);
+  color: #F44336;
+}
+
+.iconStatus {
+  transform: scale(0.7);
+}

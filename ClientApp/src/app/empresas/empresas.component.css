@@ -4,3 +4,8 @@
   line-height: 39.01px;
   padding-top: 37px;
 }
+
+.tdFirst {
+  display: flex;
+  align-items: center;
+}
