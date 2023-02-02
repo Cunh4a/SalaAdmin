@@ -4,3 +4,29 @@
   line-height: 39.01px;
   padding-top: 37px;
 }
+
+.tdFlex {
+  display: flex;
+  align-items: center;
+}
+
+.btnAction {
+  margin: 0 .5rem;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  background: rgba(217, 217, 217, 1);
+}
+
+.iconAction {
+  color: rgba(97, 97, 97, 1);
+  transform: scale(0.8);
+}
+
+.iconSort {
+  transform: scale(0.6);
+}
